@@ -1,44 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>CV Nombre Apellido</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="imagenes/icono_usuario.jpg" type="image/x-icon">
+    <style>
+        div {
+            border-radius:15px;
+            border: 5px solid rgba(0, 0, 105,0.2);
+            margin: 15px 15px;
+            padding: 10px;
+            box-shadow:2px 4px darkcyan;
+     		background-color: rgba(100, 200, 255, 1);
+        }
+
+        #logo{
+      		border-radius:50%;
+            width: 50px;
+            height: 50px;
+            float: left;
+        }
+
+        .cv{
+            text-align: center; 
+      		font-family: "Roboto", sans-serif;
+      		background: linear-gradient(to right, lightblue , lightgreen);
+        }
+      h1,h2,h3,h4{
+          text-shadow: 4px 5px gray;
+          font-family: "Roboto", sans-serif;
+          font-weight: 500;
+          font-style: italic;
+      }
+    </style>
 </head>
-<body>
 
-<div>
-    <h1>Nombre Alumno</h1>
-    <h2>Ing. en Computacion</h2>
-</div>
-
-<div>
-    <h3>Datos Personales</h3>
-    <p><span>Fecha de Nacimiento:</span> dd/mm/aaaa</p>
-    <p><span>Email:</span> email@email.com</p>
-</div>
-
-<div>
-    <h3>Formacion Academica</h3>
-    <p><span>Carrera:</span> Ingeniería XXXXX</p>
-    <p><span>Universidad:</span> Universidad Católica de Córdoba</p>
-    <p><span>Año de Ingreso:</span> 2018</p>
-</div>
-
-<div>
-    <h3>Cursos</h3>
+<body class="cv">
 
     <div>
-        <h4>Nombre Curso 1</h4>
-        <p><span>Lugar:</span> Nombre Institución</p>
-        <p><span>Año:</span> XXXX </p>
+        <img src="imagenes/icono_usuario.jpg" id="logo">
+        <h1>Nombre Alumno</h1>
+        <h2>Ing. en Computacion</h2>
     </div>
 
     <div>
-        <h4>Nombre Curso 2</h4>
-        <p><span>Lugar:</span> Nombre Institución</p>
-        <p><span>Año:</span> XXXX </p>
+        <h3>Datos Personales</h3>
+        <p><span>Fecha de Nacimiento:</span> dd/mm/aaaa</p>
+        <p><span>Email:</span> email@email.com</p>
     </div>
-</div>
+
+    <div>
+        <h3>Formacion Academica</h3>
+        <p><span>Carrera:</span> Ingeniería XXXXX</p>
+        <p><span>Universidad:</span> Universidad Católica de Córdoba</p>
+        <p><span>Año de Ingreso:</span> 2018</p>
+    </div>
+
+    <div>
+        <h3>Cursos</h3>
+
+        <div>
+            <h4>Nombre Curso 1</h4>
+            <p><span>Lugar:</span> Nombre Institución</p>
+            <p><span>Año:</span> XXXX </p>
+        </div>
+
+        <div>
+            <h4>Nombre Curso 2</h4>
+            <p><span>Lugar:</span> Nombre Institución</p>
+            <p><span>Año:</span> XXXX </p>
+        </div>
+    </div>
 
 </body>
+
 </html>
