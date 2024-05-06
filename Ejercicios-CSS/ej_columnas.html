@@ -23,8 +23,12 @@
     }
     
      a:hover {
-       font-size:1.4em;
-    }
+       width: 100px;
+       height: 100px;
+       background: red;
+       -webkit-transition: width 1s, height 1s, -webkit-transform 1s; /* Safari */
+       transition: width 1s, height 1s, transform 1s;    
+     }
     
      a:active {
        font-weight: bold;
