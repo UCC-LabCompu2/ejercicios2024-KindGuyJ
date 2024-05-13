@@ -1,9 +1,8 @@
 /**
- * Descripción
- * @method Nombre de la función
- * @param Parámetro A
- * @param Parámetro B
- * @return Valor que retorna
+ * Convierte unidades entre metros,yardas,pies y pulgadas
+ * @method convunidades
+ * @param {string} ID
+ * @param {number} N
  */
 function convunidades(ID, N) {
     if (isNaN(N)) {
