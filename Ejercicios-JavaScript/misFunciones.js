@@ -6,7 +6,7 @@
  * @return Valor que retorna
  */
 function convunidades(ID,N):void{
-  if(IsNaN(valor)){alerta('El valor ingresado no es un numero');
+  if(isNaN(valor)){alerta('El valor ingresado no es un numero');
     document.getElementById("metro").value = "";
     document.getElementById("pulgada").value = "";
     document.getElementById("pie").value = "";
