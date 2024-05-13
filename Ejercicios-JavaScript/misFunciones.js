@@ -5,7 +5,7 @@
  * @param Parámetro B
  * @return Valor que retorna
  */
-function convunidades(ID,N):void{
+function convunidades(ID,N){
   if(isNaN(valor)){alerta('El valor ingresado no es un numero');
     document.getElementById("metro").value = "";
     document.getElementById("pulgada").value = "";
