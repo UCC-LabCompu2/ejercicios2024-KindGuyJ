@@ -6,12 +6,13 @@
  * @return Valor que retorna
  */
 function convunidades(ID,N){
-  if(isNaN(valor)){alerta('El valor ingresado no es un numero');
+if (isNaN(N)) {
+    alert('El valor ingresado no es un número');
     document.getElementById("metro").value = "";
     document.getElementById("pulgada").value = "";
     document.getElementById("pie").value = "";
     document.getElementById("yarda").value = "";
-    }
+}
   else if (ID=="metro"){
     document.getElementById("pulgada").value = N*39.3701;
     document.getElementById("pie").value = N*3.28084;
