@@ -79,7 +79,7 @@ let PasarPagina = () => {
     cant = document.getElementById("distancia").value;
     unit = document.getElementsByName("unidades")[0].value;
     urlComb = "SegundaWeb.html#" + cant + "#" + unit;
-    windows.open(urlComb);
+    window.open(urlComb);
 }
 
 let CargaPag = () => {
