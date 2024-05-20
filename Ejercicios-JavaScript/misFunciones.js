@@ -9,6 +9,7 @@ function works(){
 }
 
 convunidades = (ID, N) => {
+    if (N includes
     let metros, pulgadas, yardas, pies
     if (isNaN(N)) {
         alert('El valor ingresado no es un número');
@@ -38,10 +39,10 @@ convunidades = (ID, N) => {
         pies = N * 3;
         metros = N * 0.9144;
     }
-    document.getElementById("metro").value = metros;
-    document.getElementById("pulgada").value = pulgadas;
-    document.getElementById("pie").value = pies;
-    document.getElementById("yarda").value = yardas;
+    document.getElementById("metro").value = Math.round(metros*100)/100;
+    document.getElementById("pulgada").value = Math.round(pulgadas*100)/100;
+    document.getElementById("pie").value = Math.round(pies*100)/100;
+    document.getElementById("yarda").value = Math.round(yardas*100)/100;
 }
 
 function convgr(ID){
@@ -66,7 +67,7 @@ let HidenS = (valorMD) => {
 
 let cs = () => {
     let num1,num2;
-    num1 = number(document.GetElementsByName("sum_num1")[0].value);
-    num2 = number(document.GetElementsByName("sum_num2")[0].value);
+    num1 = parseFloat(document.GetElementsByName("sum_num1")[0].value);
+    num2 = parseFloat(document.GetElementsByName("sum_num2")[0].value);
     document.GetElementsByName("sum_total")[0].value = num1+num2;
 }
