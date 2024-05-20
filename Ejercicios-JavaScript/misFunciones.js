@@ -4,6 +4,10 @@
  * @param {string} ID
  * @param {number} N
  */
+function works(){
+    alert("I exist to know if misfunciones.js loads")
+}
+
 convunidades = (ID, N) => {
     let metros, pulgadas, yardas, pies
     if (isNaN(N)) {
