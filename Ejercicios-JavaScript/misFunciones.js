@@ -9,7 +9,9 @@ function works(){
 }
 
 convunidades = (ID, N) => {
-    if (N includes
+    if (N.includes(",")){
+        N = N.replace(",",".")
+    }
     let metros, pulgadas, yardas, pies
     if (isNaN(N)) {
         alert('El valor ingresado no es un número');
