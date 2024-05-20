@@ -34,11 +34,11 @@ function convunidades(ID, N) {
 function convgr(ID){
     if(ID==grados){}
     let grad = document.getElementById(element "grados").value;
-    let rad number = grad*Math.PI/180
+    let rad = grad*Math.PI/180
     let document.getElementById(element "radianes").value = rad
     else {if(ID==radianes){
         let rad = document.getElementById(element "radianes").value;
-        let grad number = grad*Math.PI/180
+        let grad = grad*Math.PI/180
         let document.getElementById(element "grados").value = rad 
     }}
 }
