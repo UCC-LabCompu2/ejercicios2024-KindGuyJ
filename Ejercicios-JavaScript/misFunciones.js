@@ -45,11 +45,11 @@ function convgr(ID){
     let grad = document.getElementById("grados").value;
     let rad = grad*Math.PI/180;
     document.getElementById("radianes").value = rad;
-    else {if(ID==radianes){
+    else if(ID==radianes){
         let rad = document.getElementById("radianes").value;
         let grad = grad*Math.PI/180;
         document.getElementById("grados").value = rad;
-    }}
+    }
 }
 
 let HidenS = (valorMD) => {
