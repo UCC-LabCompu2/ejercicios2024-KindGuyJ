@@ -18,18 +18,22 @@ convunidades = (ID, N) => {
         pies = "";
         yardas = "";
     } else if (ID == "metro") {
+        metros = N
         pulgadas = N * 39.3701;
         pies = N * 3.28084;
         yardas = N * 1.09361;
     } else if (ID == "pie") {
+        pies = N
         pulgadas = N * 12;
         metros = N * 0.3048;
         yardas = N * 0.333333;
     } else if (ID == "pulgada") {
+        pulgadas = N
         metros = N * 0.0254;
         pies = N * 0.0833333;
         yardas = N * 0.0277778;
     } else if (ID == "yarda") {
+        yardas = N
         pulgadas = N * 36;
         pies = N * 3;
         metros = N * 0.9144;
