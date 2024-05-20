@@ -51,3 +51,11 @@ function convgr(ID){
         document.getElementById("grados").value = rad;
     }}
 }
+
+let HidenS = (valorMD) => {
+    if valor(ValorMD==="val_mostrar"){
+        document.getElementById("SoyYo").style.display = "block";
+    }else if valor(ValorMD==="val_ocultar"){
+        document.getElementById("SoyYo").style.display = "none";
+    }
+} 
