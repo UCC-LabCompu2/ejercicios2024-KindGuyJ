@@ -41,10 +41,10 @@ convunidades = (ID, N) => {
 }
 
 function convgr(ID){
-    if(ID==grados){}
+    if(ID==grados){
     let grad = document.getElementById("grados").value;
     let rad = grad*Math.PI/180;
-    document.getElementById("radianes").value = rad;
+    document.getElementById("radianes").value = rad;}
     else if(ID==radianes){
         let rad = document.getElementById("radianes").value;
         let grad = grad*Math.PI/180;
