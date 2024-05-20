@@ -53,9 +53,9 @@ function convgr(ID){
 }
 
 let HidenS = (valorMD) => {
-    if valor(ValorMD==="val_mostrar"){
+    if (ValorMD==="val_mostrar"){
         document.getElementById("SoyYo").style.display = "block";
-    }else if valor(ValorMD==="val_ocultar"){
+    }else if (ValorMD==="val_ocultar"){
         document.getElementById("SoyYo").style.display = "none";
     }
 }
