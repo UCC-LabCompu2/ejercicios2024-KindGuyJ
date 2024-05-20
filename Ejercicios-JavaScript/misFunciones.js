@@ -58,4 +58,11 @@ let HidenS = (valorMD) => {
     }else if valor(ValorMD==="val_ocultar"){
         document.getElementById("SoyYo").style.display = "none";
     }
-} 
+}
+
+let cs = () => {
+    let num1,num2;
+    num1 = number(document.GetElementsByName("sum_num1")[0].value);
+    num2 = number(document.GetElementsByName("sum_num2")[0].value);
+    document.GetElementsByName("sum_total")[0].value = num1+num2;
+}
