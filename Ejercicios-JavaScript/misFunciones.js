@@ -30,3 +30,15 @@ function convunidades(ID, N) {
         document.getElementById("metro").value = N * 0.9144;
     }
 }
+
+function convgr(ID){
+    if(ID==grados){}
+    let grad = document.getElementById(element "grados").value;
+    let rad number = grad*Math.PI/180
+    let document.getElementById(element "radianes").value = rad
+    else {if(ID==radianes){
+        let rad = document.getElementById(element "radianes").value;
+        let grad number = grad*Math.PI/180
+        let document.getElementById(element "grados").value = rad 
+    }}
+}
