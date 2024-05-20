@@ -77,7 +77,7 @@ let cs = () => {
 let PasarPagina = () => {
     let unit,cant, urlComb;
     cant = document.getElementById("distancia").value;
-    unit = document.getElementByName("unidades")[0].value;
+    unit = document.getElementsByName("unidades")[0].value;
     urlComb = "SegundaWeb.html#" + cant + "#" + unit;
     windows.open(urlComb);
 }
