@@ -5,7 +5,7 @@
  * @param {number} N
  */
 function works(){
-    alert("I exist to know if misfunciones.js loads")
+    alert("I exist to know if misfunciones.js loads but generally to make J suffer")
 }
 
 convunidades = (ID, N) => {
