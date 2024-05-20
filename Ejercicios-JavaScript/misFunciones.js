@@ -73,3 +73,20 @@ let cs = () => {
     num2 = parseFloat(document.GetElementsByName("sum_num2")[0].value);
     document.GetElementsByName("sum_total")[0].value = num1+num2;
 }
+
+let PasarPagina = () => {
+    let unit,cant, urlComb;
+    cant = document.getElementById("distancia").value;
+    unit = document.getElementByNames("unidades")[0].value;
+    urlComb = "SegundaWeb.html#" + cant + "#" + unit;
+    windows.open(urlComb);
+}
+
+let CargaPag = () => {
+    let cant, unit, urlCompleta;
+    urlCompleta = window.location.href;
+    urlCompleta = UrlCompleta.split("#");
+    cant = urlCompleta[1];
+    unit = urlCompleta[2];
+    document.getElementById("dist") = cant + " " + unit
+}
