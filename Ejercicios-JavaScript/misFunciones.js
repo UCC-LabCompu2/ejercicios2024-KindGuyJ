@@ -110,7 +110,7 @@ let CargaPag1 = () => {
 function CirculoCuadrado(){
     const canvas = document.getElementById("myCanvas");
     const ctx = canvas.getContext("2d");
-    
+
     ctx.fillStyle = "#feab5a";
 
     const yMax = canvas.height;
@@ -120,4 +120,30 @@ function CirculoCuadrado(){
     const margen = 10;
     ctx.fillRect(margen, yMax-lado-margen, lado, lado);
     ctx.arc(xMax/2,yMax/2,50,0,2*Math.PI);
+}
+
+function CargarListenerP() {
+    document.getElementById("PaintCanvas").addEventListener("onmousemove",dibujar());
+}
+var bandera;
+function dibujar(){
+    const canvas = document.getElementById("PaintCanvas");
+    const ctx = canvas.getContext("2d");
+
+    let posx = event.clientX;
+    let posy = event.clientY;
+
+    ctx.fillStyle = "#000000";
+
+    canvas.onmousedown = function (){bandera=true;}
+    canvas.onmouseup = function (){bandera=false;}
+    if (bandera=true){
+        ctx.fillRect(posx, posy, 5,5);
+    }
+}
+
+function LimpiarPaint(){
+    const canvas = document.getElementById("PaintCanvas");
+    const ctx = canvas.getContext("2d");
+    canvas.width = canvas.width;
 }
