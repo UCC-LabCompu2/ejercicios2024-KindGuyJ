@@ -158,20 +158,18 @@ function dibujar2() {
 
     ctx.beginPath();
     //Lineas horizontales
-    for(var i=0; i<yMax;){
+    for(var i=20; i<yMax;i=i+20){
         ctx.moveTo(0,i);
         ctx.LineTo(xMax,i);
         ctx.strokeStyle = "#000000";
         ctx.stroke();
-        i=i+20;
     }
     //lineas verticales
-    for(var i=0; i<xMax;){
+    for(let i=20; i<xMax; i=i+20){
         ctx.moveTo(i,0);
         ctx.LineTo(i,yMax);
         ctx.strokeStyle = "#000000";
         ctx.stroke();
-        i=i+20;
     }
     ctx.endPath();
 }
