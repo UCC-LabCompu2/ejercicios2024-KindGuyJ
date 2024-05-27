@@ -119,7 +119,7 @@ function CirculoCuadrado(){
     const lado = 100;
     const margen = 10;
     ctx.fillRect(margen, yMax-lado-margen, lado, lado);
-    ctx.arc(xMax/2,yMax/2,50,0,2*Math.PI);
+    ctx.arc(xMax/2,yMax/2,50, 15,2*Math.PI);
 }
 
 function CargarListenerP() {
