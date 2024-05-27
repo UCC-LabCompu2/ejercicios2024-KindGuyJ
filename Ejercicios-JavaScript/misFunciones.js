@@ -171,5 +171,13 @@ function dibujar2() {
         ctx.strokeStyle = "#000000";
         ctx.stroke();
     }
+    ctx.moveTo(0,yMax/2);
+    ctx.LineTo(xMax,yMax/2);
+    ctx.strokeStyle = "#555555";
+    ctx.stroke();
+    ctx.moveTo(xMax/2,0);
+    ctx.LineTo(xMax/2,yMax);
+    ctx.strokeStyle = "#555555";
+    ctx.stroke();
     ctx.endPath();
 }
