@@ -97,12 +97,12 @@ let PasarPagina1 = () => {
     cant = document.getElementById("distancia").value;
     sessionStorage.setItem("cantidad",cant);
     sessionStorage.setItem("unidad",unit);
-    window.open(SegundaWeb1.html);
+    window.open("SegundaWeb1.html");
 }
 
 let CargaPag1 = () => {
     let cant, unit;
     cant = sessionStorage.getItem("cantidad");
     unit = sessionStorage.getItem("unidad");
-    document.getElementById("dist") = cant + " " + unit
+    document.getElementById("dist") = cant + " " + unit;
 }
