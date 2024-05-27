@@ -90,3 +90,19 @@ let CargaPag = () => {
     unit = urlCompleta[2];
     document.getElementById("dist") = cant + " " + unit
 }
+
+let PasarPagina1 = () => {
+    let cant, unit;
+    unit = document.getElementsByName("unidades")[0].value;
+    cant = document.getElementById("distancia").value;
+    sessionStorage.setItem("cantidad",cant);
+    sessionStorage.setItem("unidad",unit);
+    window.open(SegundaWeb1.html);
+}
+
+let CargaPag1 = () => {
+    let cant, unit;
+    cant = sessionStorage.getItem("cantidad");
+    unit = sessionStorage.getItem("unidad");
+    document.getElementById("dist") = cant + " " + unit
+}
