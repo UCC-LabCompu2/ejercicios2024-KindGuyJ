@@ -104,5 +104,5 @@ let CargaPag1 = () => {
     let cant, unit;
     cant = sessionStorage.getItem("cantidad");
     unit = sessionStorage.getItem("unidad");
-    document.getElementById("dist") = cant + " " + unit;
+    document.getElementById("dist").value = cant + " " + unit;
 }
