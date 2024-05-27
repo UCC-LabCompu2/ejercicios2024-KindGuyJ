@@ -160,23 +160,23 @@ function dibujar2() {
     //Lineas horizontales
     for(var i=20; i<yMax;i=i+20){
         ctx.moveTo(0,i);
-        ctx.LineTo(xMax,i);
+        ctx.lineTo(xMax,i);
         ctx.strokeStyle = "#000000";
         ctx.stroke();
     }
     //lineas verticales
     for(let i=20; i<xMax; i=i+20){
         ctx.moveTo(i,0);
-        ctx.LineTo(i,yMax);
+        ctx.lineTo(i,yMax);
         ctx.strokeStyle = "#000000";
         ctx.stroke();
     }
     ctx.moveTo(0,yMax/2);
-    ctx.LineTo(xMax,yMax/2);
+    ctx.lineTo(xMax,yMax/2);
     ctx.strokeStyle = "#555555";
     ctx.stroke();
     ctx.moveTo(xMax/2,0);
-    ctx.LineTo(xMax/2,yMax);
+    ctx.lineTo(xMax/2,yMax);
     ctx.strokeStyle = "#555555";
     ctx.stroke();
     ctx.endPath();
