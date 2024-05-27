@@ -106,3 +106,18 @@ let CargaPag1 = () => {
     unit = sessionStorage.getItem("unidad");
     document.getElementById("dist").value = cant + " " + unit;
 }
+
+function CirculoCuadrado(){
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+    
+    ctx.fillStyle = "#feab5a";
+
+    const yMax = canvas.height;
+    const xMax = canvas.width;
+
+    const lado = 100;
+    const margen = 10;
+    ctx.fillRect(margen, yMax-lado-margen, lado, lado);
+    ctx.arc(xMax/2,yMax/2,50,0,2*Math.PI);
+}
