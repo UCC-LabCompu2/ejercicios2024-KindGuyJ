@@ -137,8 +137,9 @@ function dibujar(){
 
     canvas.onmousedown = function (){bandera=true;}
     canvas.onmouseup = function (){bandera=false;}
-    if (bandera=true){
+    if (bandera){
         ctx.fillRect(posx, posy, 5,5);
+        ctx.fill;
     }
 }
 
