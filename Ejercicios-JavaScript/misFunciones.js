@@ -148,3 +148,30 @@ function LimpiarPaint(){
     const ctx = canvas.getContext("2d");
     canvas.width = canvas.width;
 }
+
+function dibujar2() {
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+
+    const yMax = canvas.height;
+    const xMax = canvas.width;
+
+    ctx.beginPath();
+    //Lineas horizontales
+    for(var i=0; i<yMax;){
+        ctx.moveTo(0,i);
+        ctx.LineTo(xMax,i);
+        ctx.strokeStyle = "#000000";
+        ctx.stroke();
+        i=i+20;
+    }
+    //lineas verticales
+    for(var i=0; i<xMax;){
+        ctx.moveTo(i,0);
+        ctx.LineTo(i,yMax);
+        ctx.strokeStyle = "#000000";
+        ctx.stroke();
+        i=i+20;
+    }
+    ctx.endPath();
+}
