@@ -171,6 +171,8 @@ function dibujar2() {
         ctx.strokeStyle = "#000000";
         ctx.stroke();
     }
+    ctx.closePath();
+    ctx.beginPath();
     ctx.moveTo(0,yMax/2);
     ctx.lineTo(xMax,yMax/2);
     ctx.strokeStyle = "#ff0000";
@@ -179,7 +181,23 @@ function dibujar2() {
     ctx.lineTo(xMax/2,yMax);
     ctx.strokeStyle = "#ff0000";
     ctx.stroke();
-    ctx.endPath();
+    ctx.closePath();
+
+    let numx=-20;
+    ctx.font = "10pt Verdana";
+    ctx.fillStyle = "blue";
+    for(let i=0;i<xMax;){
+        ctx.fillText(String(numx),i,Ymax/2);
+        i += 20;
+        numx++;
+    }
+
+    let numy = -15;
+    for(let i=0;i<yMax;){
+        ctx.fillText(String(numy),Xmax/2,i);
+        i += 20;
+        numx++;
+    }
 }
 
 function Dibujarxy(PsX,Psy) {
