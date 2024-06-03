@@ -188,7 +188,22 @@ function Dibujarxy(PsX,Psy) {
     canvas.width = canvas.width;
     const img = new Image();
     img.src = "images/auto.png";
-    img.onload = function(){
-        ctx.drawImage(img, PsX, Psy);
-    }
+
+    if(PsX<0||psy<0){showDialog()}
+    else if(PsX>canvas.width||PsY>canvas.height){showDialog()}
+    else{
+            img.onload = function(){
+                ctx.drawImage(img, PsX, Psy);
+            }
+        }
+}
+
+function showDialog(){
+    const dialog = document.getElementById("dialog");
+    dialog.showModal();
+}
+
+function cerrarDialog(){
+    const dialog = document.getElementById("dialog");
+    dialog.close;
 }
