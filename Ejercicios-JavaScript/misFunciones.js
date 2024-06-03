@@ -173,11 +173,22 @@ function dibujar2() {
     }
     ctx.moveTo(0,yMax/2);
     ctx.lineTo(xMax,yMax/2);
-    ctx.strokeStyle = "#555555";
+    ctx.strokeStyle = "#ff0000";
     ctx.stroke();
     ctx.moveTo(xMax/2,0);
     ctx.lineTo(xMax/2,yMax);
-    ctx.strokeStyle = "#555555";
+    ctx.strokeStyle = "#ff0000";
     ctx.stroke();
     ctx.endPath();
+}
+
+function Dibujarxy(PsX,Psy) {
+    const canvas = document.getElementById("MyCanvas");
+    const ctx = canvas.getContext("2");
+    canvas.width = canvas.width;
+    const img = new Image();
+    img.src = "images/auto.png";
+    img.onload = function(){
+        ctx.drawImage(img, PsX, Psy);
+    }
 }
