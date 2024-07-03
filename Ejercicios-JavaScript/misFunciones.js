@@ -86,6 +86,27 @@ const cr = () => {
     document.getElementById("totalR").value = (document.getElementById("numr1").value - document.getElementById("numr2").value);
 }
 
+x = 0;
+dx = 2;
+
+const animarAuto = () => {
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+
+    canvas.width = canvas.width;
+
+    const img = new Image();
+    img.src = "images/auto.png";
+
+    img.onload = function () {
+        ctx.drawImage(img, x, 100);
+    }
+    if (canvas.width<x){
+        x=0;
+    }
+    x+=dx;
+}
+
 let PasarPagina = () => {
     let unit,cant, urlComb;
     cant = document.getElementById("distancia").value;
