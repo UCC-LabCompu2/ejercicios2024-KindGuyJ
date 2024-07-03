@@ -1,8 +1,8 @@
 /**
  * Convierte unidades entre metros,yardas,pies y pulgadas
  * @method convunidades
- * @param {string} ID
- * @param {number} N
+ * @param {string} ID - Unidad original
+ * @param {number} N - Cantidad de unidades
  */
 function works(){
     alert("I exist to know if misfunciones.js loads but generally to make J suffer")
@@ -67,11 +67,23 @@ let HidenS = (valorMD) => {
     }
 }
 
-let cs = () => {
+const cs = () => {
     let num1,num2;
-    num1 = parseFloat(document.GetElementsByName("sum_num1")[0].value);
-    num2 = parseFloat(document.GetElementsByName("sum_num2")[0].value);
-    document.GetElementsByName("sum_total")[0].value = num1+num2;
+    num1 = parseFloat(document.getElementById("nums1").value);
+    num2 = parseFloat(document.getElementById("nums2").value);
+    document.getElementById("totalS").value = num1+num2;
+}
+
+const cm = () => {
+    document.getElementById("totalM").value = (document.getElementById("numm1").value * document.getElementById("numm2").value);
+}
+
+const cd = () => {
+    document.getElementById("totalD").value = (document.getElementById("numd1").value / document.getElementById("numd2").value);
+}
+
+const cr = () => {
+    document.getElementById("totalR").value = (document.getElementById("numr1").value - document.getElementById("numr2").value);
 }
 
 let PasarPagina = () => {
@@ -88,7 +100,7 @@ let CargaPag = () => {
     urlCompleta = UrlCompleta.split("#");
     cant = urlCompleta[1];
     unit = urlCompleta[2];
-    document.getElementById("dist") = cant + " " + unit
+    document.getElementById("dist").value = cant + " " + unit
 }
 
 let PasarPagina1 = () => {
